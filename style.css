@@ -1,6 +1,6 @@
 body {
   font-family: Overpass;
-  color: #000000;
+  color: whitesmoke;
   font-size: 18px;
   background-color: #efdcbe;
 
@@ -12,11 +12,15 @@ h1, h2, h3, p {
 
 a {
   font-family: Chivo;
-  color: #111;
+  color:  whitesmoke;
   margin: auto;
   font-weight: bold;
   text-decoration: none;
   transition: .3s;
+}
+
+img {
+  border-radius: 4px;
 }
 
 .logo {
@@ -28,29 +32,30 @@ a {
 
 #menu {
     display: flex;                /* Transformation en flexbox */
-    padding:0;                    /* Suppression des marges internes */
+    padding-top: 5px;             /* marge interne*/
+    padding-bottom: 5px;
     justify-content: space-around;/* Alignements des liens dans le menu */
 }
+
 #menu li {
     list-style-type: none ;       /* Suppression des puces */
   
 }
 .btn {
     display: inline-block;                
-    min-width: 160px;                   /* Largeur minimale des liens */   
-    
+    min-width: 100px;                   /* Largeur minimale des liens */   
+    max-width: 160px;
     margin: 0,5rem;                     /* Marges externes */
     padding: 10px 10px;                 /* Marges internes */
     text-align: center;                 /* Centrage du texte */   
-    background-color: #1ABC9C;          /* Arrière-plan */
-    color: #000;                        /* Couleur du texte */
-    border: 1px solid #000;             /* Ajout d'une bordure */
+    background-color: rgb(166,212,239);          /* Arrière-plan */
+    color: white;                        /* Couleur du texte */
     border-radius: 4px;                 /* Arrondis des bordures */
     transition: all 1s ;                /* Ajout des effets de transition */
     box-shadow: 0 0 16px rgb(0 0 0 / 10%);  /*ajout d'ombrage*/
 }
 .btn:hover {
-    background-color: #ed2794;
+    background-color: #efdcbe;
     color: #ffe843;
     border-color: #000;
 }
@@ -66,15 +71,13 @@ a {
 
 
 #container {
-  margin-top: 20px;
+  margin-top:0;
   display:flex;
   padding: 0;
   justify-content: space-around;
+  background-color: #cca989 ;
 }
 .element {
-  background: white;
-  box-shadow: 0 0 16px rgb(0 0 0 / 10%);
-  border-radius: 4px;
   padding: 24px;
   margin: 8px;
   flex-grow: 1;
@@ -84,6 +87,25 @@ a {
 .element img {
   width: 200px;
   height: 150px;
+  background-position: center;
+}
+
+#container_2 {
+  margin-top:0;
+  display:flex;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.element_2 {
+  padding: 24px;
+  margin: 8px;
+  flex-grow: 1;
+  text-align: center;
+}
+.element_2 img {
+  width:  600px;
+  size: cover;
   background-position: center;
 }
 
