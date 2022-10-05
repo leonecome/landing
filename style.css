@@ -6,24 +6,22 @@ body {
 
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   font-family: Chivo;
 }
 
 a {
-  color: #1A48E3;
+  font-family: Chivo;
+  color: #111;
   margin: auto;
   font-weight: bold;
   text-decoration: none;
   transition: .3s;
 }
 
-a:hover {
-  color: #CE2FAE;
-}
 .logo {
   display: block;
-  width: 150px;
+  width: 175px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -37,55 +35,35 @@ a:hover {
     list-style-type: none ;       /* Suppression des puces */
   
 }
-#menu a {
-    display:block;                /* Transformation en block */
-    width: 160px;             /* Largeur minimale des liens */   
+.btn {
+    display: inline-block;                
+    min-width: 160px;                   /* Largeur minimale des liens */   
     
-    margin: 0,5rem;               /* Marges externes */
-    padding: 10px 10px;            /* Marges internes */
-    text-align: center;           /* Centrage du texte */   
-    background-color: #1ABC9C;    /* Arrière-plan */
-    color: #fff;                  /* Couleur du texte */
-    border: 1px solid #fff;       /* Ajout d'une bordure */
-    border-radius: 4px;           /* Arrondis des bordures */
-    
-    transition: all 1s ;          /* Ajout des effets de transition */
+    margin: 0,5rem;                     /* Marges externes */
+    padding: 10px 10px;                 /* Marges internes */
+    text-align: center;                 /* Centrage du texte */   
+    background-color: #1ABC9C;          /* Arrière-plan */
+    color: #000;                        /* Couleur du texte */
+    border: 1px solid #000;             /* Ajout d'une bordure */
+    border-radius: 4px;                 /* Arrondis des bordures */
+    transition: all 1s ;                /* Ajout des effets de transition */
+    box-shadow: 0 0 16px rgb(0 0 0 / 10%);  /*ajout d'ombrage*/
 }
-
-#menu a.actif {    
-    background-color: #000 ; 
-    color: #1ABC9C ;
-    border-color: #1ABC9C ;
-}
-#menu a:hover,
-#menu a:hover.actif{
+.btn:hover {
     background-color: #ed2794;
     color: #ffe843;
-    border-color: #ffe843;
+    border-color: #000;
 }
 
 #First {
+
   background-image: url(images/Surf.jpg);
   background-size: cover;
-  padding: 150px 0;
+  padding: 200px 0;
   margin-top: 20px 0;
   text-align: center;
 }
 
-#First a{
-
-  display:block;                /* Transformation en block */
-    width: 160px;               /*Largeur*/   
-    margin: 0,5rem;             /* Marges externes */
-    padding: 10px 10px;       /* Marges internes */
-    text-align: center;         /* Centrage du texte */   
-    background-color: #1ABC9C;  /* Arrière-plan */
-    color: #fff;                /* Couleur du texte */
-    border: 1px solid #fff;     /* Ajout d'une bordure */
-    border-radius: 4px;         /* Arrondis des bordures */
-    
-    transition: all 1s ;        /* Ajout des effets de transition */
-}
 
 #container {
   margin-top: 20px;
@@ -109,19 +87,6 @@ a:hover {
   background-position: center;
 }
 
-.element a {
-  display:block;                /* Transformation en block */
-    width: 160px;               /*Largeur*/   
-    margin: 0,5rem;             /* Marges externes */
-    padding: 10px 10px;       /* Marges internes */
-    text-align: center;         /* Centrage du texte */   
-    background-color: #1ABC9C;  /* Arrière-plan */
-    color: #fff;                /* Couleur du texte */
-    border: 1px solid #fff;     /* Ajout d'une bordure */
-    border-radius: 4px;         /* Arrondis des bordures */
-    
-    transition: all 1s ;        /* Ajout des effets de transition */
-}
 
 
 
